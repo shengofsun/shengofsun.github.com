@@ -7,8 +7,7 @@ email: luckyweijie@gmail.com
 duoshuo: shengofbig
 weibo: 1677784961
 github: shengofsun
-pygments: true
+highlighter: pygments
 safe: true
 paginate: 20
-truncate: 300
-about: "这是我的个人博客"
+about: ""

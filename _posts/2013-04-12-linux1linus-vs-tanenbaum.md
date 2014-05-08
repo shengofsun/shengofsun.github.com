@@ -5,7 +5,6 @@ tagline: Linux过时了
 category: computer related
 tags: [os, debated]
 ---
-{% include JB/setup %}
 
 ### 写在前面
 

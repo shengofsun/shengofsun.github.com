@@ -6,7 +6,6 @@ tagline: Linux过时了
 category: computer related
 tags: [os, debated]
 ---
-{% include JB/setup %}
 
 发信人: comm121@unixg.ubc.ca (Louie)<br/>
 主题: 回复：Linux过时了<br/>

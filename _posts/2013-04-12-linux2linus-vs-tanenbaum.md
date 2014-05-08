@@ -5,7 +5,6 @@ category: computer related
 tagline: Linux过时了
 tags: [os, debated]
 ---
-{% include JB/setup %}
 
 发信人: rburns@finess.Corp.Sun.COM (Randy Burns)<br/>
 主题: 回复：Linux过时了<br/>

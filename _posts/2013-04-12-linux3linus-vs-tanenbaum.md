@@ -3,7 +3,7 @@ layout: post
 title: "Linus vs. Tanenbaum译稿(3)"
 category: computer related
 tagline: Linux过时了
-category: computer related
+category: 软件设计
 tags: [os, debated]
 ---
 

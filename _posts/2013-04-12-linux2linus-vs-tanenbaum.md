@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Linus vs. Tanenbaum译稿(2)"
-category: computer related
+category: 软件设计
 tagline: Linux过时了
 tags: [os, debated]
 ---

@@ -167,9 +167,9 @@ zk api返回值,在异常情况下基本上可以分为三大类:
 
 * zk api的回调全部在completion thread的上下文中执行．所以如果有全局变量在多个回调函数中执行，不用担心竞争条件的发生．
 * 会话变为connecting的处理逻辑是这样的: 
-  1. io thread把会话异常的消息放入到completions_to_process队列中
-  2. io_thread清空to_send和to_process
-  3. io_thread遍历sent_request队列，设置返回值为connection_loss(operation_timout)，放入completions_to_process队列．所以，一旦会话变为connecting，已经加入发送队列中的消息旋即都会随后返回，而不做任何重发的cache．
+	- io thread把会话异常的消息放入到completions_to_process队列中
+	- io_thread清空to_send和to_process
+	- io_thread遍历sent_request队列，设置返回值为connection_loss(operation_timout)，放入completions_to_process队列．所以，一旦会话变为connecting，已经加入发送队列中的消息旋即都会随后返回，而不做任何重发的cache．
 * 如果遇到了zk会话暂时不可用，合理的方法是等待状态变为了connected了之后再开始重试；无脑的重试只会导致cpu空转．
 
 ## 封装zk的细节是不是一个好的主意
